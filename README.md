@@ -2,4 +2,4 @@
 Mobx + ReactJS : Awesome 
 
 Also avalibel at heroku:
-https://damp-basin-14472.herokuapp.com/
+https://arunkumar-ms.github.io/Mobx-ReactJS/
