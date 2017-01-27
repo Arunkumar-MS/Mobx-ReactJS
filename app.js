@@ -1,4 +1,5 @@
 import express from 'express';
+import data from './data.json';
 const app = express();
 app.set('views', __dirname);
 app.engine('html', require('ejs').renderFile);
@@ -9,4 +10,7 @@ app.listen(app.get('port'));
 console.log('runing @ '+ app.get('port'));
 app.get('/', function(req, res) {
     res.render('index.html');
+});
+app.get('/json', function(req, res) {
+    res.send(data);
 });

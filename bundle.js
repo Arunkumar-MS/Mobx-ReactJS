@@ -25471,8 +25471,6 @@
 	});
 	exports.default = undefined;
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _desc, _value, _class, _descriptor, _descriptor2;
 
 	var _mobx = __webpack_require__(181);
@@ -25524,27 +25522,16 @@
 	    throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
 	}
 
-	var AppState = (_class = function () {
-	    function AppState() {
-	        _classCallCheck(this, AppState);
+	var AppState = (_class = function AppState() {
+	    _classCallCheck(this, AppState);
 
-	        _initDefineProp(this, 'day', _descriptor, this);
+	    _initDefineProp(this, 'day', _descriptor, this);
 
-	        _initDefineProp(this, 'slot', _descriptor2, this);
+	    _initDefineProp(this, 'slot', _descriptor2, this);
 
-	        this.day = 0;
-	        this.slot = (0, _getIntitalState.getInitialState)() || [];
-	    }
-
-	    _createClass(AppState, [{
-	        key: 'updateAvalibleSlot',
-	        value: function updateAvalibleSlot(id) {
-	            this.slot.appointmentdays[id].avalible -= 1;
-	        }
-	    }]);
-
-	    return AppState;
-	}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'day', [_mobx.observable], {
+	    this.day = 0;
+	    this.slot = (0, _getIntitalState.getInitialState)() || [];
+	}, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'day', [_mobx.observable], {
 	    enumerable: true,
 	    initializer: null
 	}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'slot', [_mobx.observable], {
