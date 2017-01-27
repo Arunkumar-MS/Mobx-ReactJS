@@ -12,7 +12,4 @@ export default class AppState {
         this.day = 0;
         this.slot = getInitialState() || []
     }
-    updateAvalibleSlot(id){
-      this.slot.appointmentdays[id].avalible -= 1;
-    }
 }
