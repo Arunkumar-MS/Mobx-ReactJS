@@ -1,7 +1,7 @@
 {
   "name": "mobx-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "First MobX App",
   "main": "index.js",
   "scripts": {
    "start": "node index.js"
